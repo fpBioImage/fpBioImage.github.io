@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      User guide &middot; FPBioimage
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-62602329-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container">
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+        <div id="subheadings/home/"></div>
+      <a class="sidebar-nav-item" href="/example/">Example Site</a>
+      
+
+      
+      
+        
+          
+            <div id="subheadings/404.html"></div>
+        
+      
+        
+          
+            <div id="subheadings/all_posts/"></div>
+        
+      
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/downloads/">Downloads</a>
+          
+            <div id="subheadings/downloads/"></div>
+        
+      
+        
+          
+            <div id="subheadings/posts/"></div>
+        
+      
+        
+          
+            <div id="subheadings/"></div>
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/sharingGuide/">Sharing guide</a>
+          
+            <div id="subheadings/sharingGuide/"></div>
+        
+      
+        
+          
+            <a class="sidebar-nav-item active" href="/userGuide/">User guide</a>
+          
+            <div id="subheadings/userGuide/"></div>
+        
+      
+    </nav>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">User guide</h1>
+  <script>
+    str = '<ul id="subheadings"><li><a href="#overview">Overview of controls</a></li>' +
+    '<li><a href="#basic">Basic controls</a></li>' +
+    '<li><a href="#camera">Camera movement</a></li>' +
+    '<li><a href="#rendering">Rendering settings</a></li>' +
+    '<li><a href="#bookmarking">Bookmarking</a></li>' +
+    '<li><a href="#clipping">Clipping and slicing</a></li>' +
+    '<li><a href="#requirements">Software requirements</a></li></ul>';
+    document.getElementById("subheadings/userGuide/").innerHTML = str;
+</script>
+
+<h3> Introduction </h3>
+<p>This guide provides instructions on the use of FPBioimage to view and explore volumetric image data shared on the web. The guide is complemented by an <a href="youtubeLink">instructional video</a>.</p>
+
+<p>If you need instructions on how to share your own imaging data, please see the <a href="sharingGuide.html">Sharing Guide</a>.</p>
+
+<p>You can also download this guide as a <a href="pdfLink">PDF file</a>.</p>
+
+<h3 id="overview"> Overview of controls </h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Control</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Click-and-drag</td>
+      <td>Rotate model</td>
+    </tr>
+    <tr>
+      <td>Arrow keys</td>
+      <td>Rotate model</td>
+    </tr>
+    <tr>
+      <td>Scroll wheel</td>
+      <td>Zoom</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><em>Camera Movement</em></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>W, S</td>
+      <td>Forward, back</td>
+    </tr>
+    <tr>
+      <td>A, D</td>
+      <td>Left, right</td>
+    </tr>
+    <tr>
+      <td>E, Q</td>
+      <td>Up, down</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>Toggle <em>First Person</em> mode</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>Camera direction (in <em>First Person</em> mode)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><em>Rendering Settings</em></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>Hide boundaries</td>
+    </tr>
+    <tr>
+      <td>&lt;, &gt;</td>
+      <td>Decrease/increase opacity</td>
+    </tr>
+    <tr>
+      <td>-, +</td>
+      <td>Decrease/increase intensity</td>
+    </tr>
+    <tr>
+      <td>{, }</td>
+      <td>Decrease/increase intensity cutoff</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><em>Bookmarking</em></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>Create a bookmark</td>
+    </tr>
+    <tr>
+      <td>Number keys</td>
+      <td>Restore bookmark</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><em>Clipping and Slicing</em></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>I, K</td>
+      <td>Move forward/backward (<em>clipping plane</em>)</td>
+    </tr>
+    <tr>
+      <td>J, L</td>
+      <td>Rotate left/right (<em>clipping plane</em>)</td>
+    </tr>
+    <tr>
+      <td>O, U</td>
+      <td>Tilt forward/backward (<em>clipping plane</em>)</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>Freeze plane on model</td>
+    </tr>
+    <tr>
+      <td>Z</td>
+      <td>Reset plane</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>Toggle clip/slice mode</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="basic">Basic controls</h3>
+<p><em>These controls should be familiar to anyone who has used 3D software before, and intuitive to those new to 3D viewers.</em></p>
+
+<p><strong>Rotate model</strong><br />
+The model can be rotated by click-and-drag operation of the mouse. Alternatively, the arrow keys will rotate the model about its centre.</p>
+
+<p><strong>Zoom</strong><br />
+The camera can be zoomed in and out of the model using the mouse scroll wheel. Alternatively, the W and S keys can be used if the mouse has no scroll wheel.</p>
+
+<h3 id="camera">Camera movement</h3>
+<p><em>To view the data from different perspectives, the position of the camera can be moved.</em></p>
+
+<p><strong>Forward/backward, left/right</strong><br />
+The WASD keys are used to move the camera around the model, as they form the same shape as arrow keys. This key combination is commonly used in first-person perspective 3D games, and will be familiar to many.</p>
+
+<p><strong>Up/down</strong><br />
+The camera can be moved up and down using E and Q respectively.</p>
+
+<p><strong>First Person mode</strong><br />
+Pressing F toggles First Person mode. When enabled, the mouse is used to change the direction in which the camera is pointing. Again, this interface will be familiar to those who have played first-person perspective games, and provides an immersive view of 3D imaging data.</p>
+
+<h3 id="rendering">Rendering settings</h3>
+<p><em>The rendering settings can be adjusted to ensure that different details in the data can be visualised optimally.</em></p>
+
+<p><strong>Hide boundaries</strong><br />
+The boundaries provide a sense of perspective and also prevent the camera from getting ‘lost’ in the emptiness of 3D space. Their visibility can be switched off with H, which will show the image data against a black background.</p>
+
+<p><strong>Opacity</strong><br />
+The opacity of the data can be decreased and increased with the &lt; and &gt; keys respectively. Lowering the opacity allows voxels inside the volume to be viewed through the outer layers.</p>
+
+<p><strong>Intensity</strong><br />
+The intensity or brightness of the data can be increased or decreased with the + and – keys respectively.</p>
+
+<p><strong>Cutoff threshold</strong><br />
+In order to render the volume, the darkest voxels are not displayed, as determined by the cutoff threshold. If there is a dark haze around the model, the cutoff threshold should be increased with }. If there is detail missing in the model, however, the threshold can be lowered with {.</p>
+
+<h3 id="bookmarking">Bookmarking</h3>
+<p><em>The bookmarking feature built into FPBioimage allows the user to save views locally to return to at a later time. Bookmarks can also be shared with others to provide particular views of the data.</em></p>
+
+<p><strong>Creating a bookmark</strong><br />
+The bookmark creation procedure is initialised by pressing B. This will prompt the user to choose a number key to save the bookmark under. Next, an annotation can be entered to describe the view. On pressing enter, the bookmark will be saved. Saving a bookmark under number 0 means that this view will be loaded next time the data is loaded.</p>
+
+<p><strong>Restoring a bookmark</strong><br />
+Pressing one of the number keys at any time will restore the bookmark saved under that number. Note that bookmarks are saved onto the user’s computer as a browser cookie, and so can be restored between sessions.</p>
+
+<p><strong>Sharing a bookmark</strong><br />
+After creating or restoring a bookmark it can be shared by clicking the ‘Share bookmark…’ button. This will pop up a box with a link to the bookmark. This link can then be shared in an email, Twitter post or academic journal. The link contains all information about the bookmarked view, including the annotation, so can be long; users may wish to consider using a URL shortener such as goo.gl or tinyurl.com when sharing links.</p>
+
+<h3 id="clipping">Clipping and slicing</h3>
+<p><em>The clipping and slicing feature provided by FPBioimage can provide unique views of the data, providing novel information which cannot be obtained from the raw image slices. The data can be sliced from any direction, and the cut locked in position on the model to view it from any perspective.</em></p>
+
+<p><strong>Moving the clipping plane</strong><br />
+The clipping plane starts a short distance in front of the camera, and voxels between the camera and clipping plane are removed. As the camera approaches the model, deeper layers inside the model become exposed. The clipping plane can be moved further from or closer to the camera with I and K. It can also be rotated left and right with J and L, or tilted forward and backward with O and U respectively. Note that the IJKL keys are chosen to mimic the layout of arrow keys.</p>
+
+<p><strong>Freezing the clipping plane</strong><br />
+The clipping plane starts attached to the camera. This means that as the camera moves, the position of the clipping plane changes with it. The clipping plane can be locked to the model by pressing X. Pressing the Z key resets the clipping plane so that it is re-attached to the camera.</p>
+
+<p><strong>Slice mode</strong><br />
+The N key toggles between clipping mode and slicing mode. In clipping mode, voxels between the camera and the clipping plane are not rendered. In slice mode, just a thin slice around the slicing plane is shown.</p>
+
+<h3 id="requirements">Software and hardware requirements</h3>
+<ul>
+  <li>64-bit operating system (eg. Windows 7 64-bit, Windows 10 64-bit, Mac OS X 10.7+)</li>
+  <li>64-bit web browser (eg. Google Chrome 64-bit, Microsoft Edge, Safari, Firefox 64-bit)</li>
+  <li>2GB+ RAM (depending on the complexity of the dataset)</li>
+</ul>
+
+</div>
+
+    </div>
+
+  </body>
+</html>

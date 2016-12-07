@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>FPBioimage</title>
+ <link href="http://fpb.ceb.cam.ac.uk/atom.xml" rel="self"/>
+ <link href="http://fpb.ceb.cam.ac.uk/"/>
+ <updated>2016-12-07T13:10:17+00:00</updated>
+ <id>http://fpb.ceb.cam.ac.uk</id>
+ <author>
+   <name>Marcus Fantham</name>
+   <email></email>
+ </author>
+
+ 
+
+</feed>

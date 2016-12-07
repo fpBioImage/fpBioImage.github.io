@@ -1,0 +1,16 @@
+---
+layout: default
+title: All posts
+---
+<div class="home">
+<h1>All posts</h1>
+<ul class="posts">
+{% for post in site.posts %}
+<li>
+<span>{{ post.date | date: "%b %-d, %Y" }}</span>
+<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+</li>
+{% endfor %}
+</ul>
+<p class="rss-subscribe">Subscribe <a href="{{ "atom.xml" | prepend: site.baseurl }}">via Atom</a>.</p>
+</div>
