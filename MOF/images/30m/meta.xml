@@ -1,9 +1,9 @@
 <root>
 <name>30m</name>
 <meta>
-<pixelSizeX>0.0339</pixelSizeX>
-<pixelSizeY>0.0339</pixelSizeY>
-<pixelSizeZ>0.5</pixelSizeZ>
+<pixelSizeX>1</pixelSizeX>
+<pixelSizeY>1</pixelSizeY>
+<pixelSizeZ>1</pixelSizeZ>
 <timeInterval>0</timeInterval>
 <channelName0>ch 0</channelName0>
 <channelName1>ch 1</channelName1>
