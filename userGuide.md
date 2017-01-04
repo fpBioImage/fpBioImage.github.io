@@ -15,11 +15,11 @@ title: User guide
 </script>
 
 <h3> Introduction </h3>
-This guide provides instructions on the use of FPBioimage to view and explore volumetric image data shared on the web. The guide is complemented by an [instructional video](youtubeLink).
+This guide provides instructions on the use of FPBioimage to view and explore volumetric image data shared on the web. The guide is complemented by an [instructional video](https://www.youtube.com/watch?v=tdYwFqOrN44).
 
-If you need instructions on how to share your own imaging data, please see the [Sharing Guide](sharingGuide.html).
+If you need instructions on how to share your own imaging data, please see the [Sharing Guide](../sharingGuide.html).
 
-You can also download this guide as a [PDF file](pdfLink).
+You can also download this guide as a [PDF file](../userGuide.pdf).
 
 <h3 id="overview"> Overview of controls </h3>
 

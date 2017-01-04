@@ -11,9 +11,9 @@ title: Sharing guide
 </script>
 
 <h3> Introduction </h3>
-This guide provides instruction on sharing volumetric image data using the FPBioimage. The guide is complemented by an [instructional video](youtubeLink).
+This guide provides instruction on sharing volumetric image data using the FPBioimage. The guide is complemented by an [instructional video](https://www.youtube.com/watch?v=sdEQ59pYzSY).
 
-You can also download this guide as a [PDF file](pdfLink).
+You can also download this guide as a [PDF file](../sharingGuide.pdf).
 
 <h3>License</h3>
 
