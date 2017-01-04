@@ -23,7 +23,7 @@ You can also download this guide as a [PDF file](../sharingGuide.pdf).
 
 <h3> Installing the viewer on your web server </h3>
 
-1.	Download the software from [downloads](http://fpb.ceb.cam.ac.uk/downloads/)
+1.	Download the software from [downloads](../downloads/)
 2.	Unzip the contents of the .zip file
 3.	Upload the folder ‘FPBioimage’ to your web server using your ftp client.
 
@@ -43,7 +43,7 @@ The stack can then be saved as PNG slices using File ► Save As ► Image Seque
 FPBioimage runs on a webpage. In order to display volumetric data correctly the webpage requires some information about the data, for example the location of the images and the voxel size.
 
 **Modifying the provided website template**  
-The simplest way to display your 3D data online is to modify the provided website template, which is included in the [software package download](downloads.html).  
+The simplest way to display your 3D data online is to modify the provided website template, which is included in the [software package download](../downloads.html).  
 You are free to modify and embellish the template webpage as you see fit for your website.
 
 
@@ -75,9 +75,7 @@ The last thing to be defined in the body of the webpage should be the code requi
 
 ```
 <div id="scriptLoader"></div>  
-```
-<br />
-```
+
 <script src="../FPBioimage/FPBioimageLoader.js"></script>
 ```
 
