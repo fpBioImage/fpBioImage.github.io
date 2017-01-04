@@ -43,7 +43,7 @@ The stack can then be saved as PNG slices using File ► Save As ► Image Seque
 FPBioimage runs on a webpage. In order to display volumetric data correctly the webpage requires some information about the data, for example the location of the images and the voxel size.
 
 **Modifying the provided website template**  
-The simplest way to display your 3D data online is to modify the provided website template, which is included in the [software package download](../downloads.html).  
+The simplest way to display your 3D data online is to modify the provided website template, which is included in the [software package download](../downloads/).  
 You are free to modify and embellish the template webpage as you see fit for your website.
 
 
