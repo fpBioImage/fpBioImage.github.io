@@ -54,7 +54,7 @@ A free Unity license is now available to academic institutions.
 To contribute to FPBioimage, fork our git repository. This contains the Unity assets required to build the tool from scratch.
 
 <h3 id="bugs">Report a bug</h3>
-If you have found a bug, please [report an issue](https://github.com/mfantham/FirstPersonBioimage/issues).
+If you have found a bug, please [report an issue](https://github.com/fpBioImage/assets/issues).
 
 <h3>License</h3>
 

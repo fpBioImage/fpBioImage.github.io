@@ -5,11 +5,15 @@ title: Downloads
 
 <script>
     str = '<ul id="subheadings">' +
-    '<li><a href="#">Coming soon!</a></li></ul>';    
+    '<li><a href="builds/FPBioimage.zip">FPBioimage</a></li>
+    <li><a href="builds/Template-Website.zip">Template</a></li>
+    <li><a href="https://github.com/fpBioImage/assets">Source</a></li></ul>';    
     document.getElementById("subheadings/downloads/").innerHTML = str;
 </script>
 
-* FPBioimage software is coming soon!
+* [FPBioimage](builds/FPBioimage.zip) (for integration into a website)
+* [Website Template](builds/Template-Website.zip) (including FPBioimage)
+* [Source](https://github.com/fpBioImage/assets)
 
 <h3>License</h3>
 
