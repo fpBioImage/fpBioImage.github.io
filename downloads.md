@@ -17,7 +17,7 @@ title: Downloads
 
 <h3>License</h3>
 
-*Use of FPBioimage requires a citation of the original publication of the software in [Nature Photonics](#). If FPBioimage is used to share data published in an academic journal, the original publication must be acknowledged in the references section of the publication.*
+*Use of FPBioimage requires a citation of the original publication of the software in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). If FPBioimage is used to share data published in an academic journal, the original publication must be acknowledged in the references section of the publication.*
 
 *First Person Bioimage (FPBioimage) is distributed under the [Creative Commons Attribution - ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/). This means that, providing you credit the original software appropriately, you are free to copy, redistribute, remix, transform and build upon the software, as long as future contributions are distributed under the same license.*
 
