@@ -15,6 +15,8 @@ title: Downloads
 * [Website Template](../builds/Template-Website.zip) (including FPBioimage)
 * [Source](https://github.com/fpBioImage/assets)
 
+* [Android App](../builds/VRBioImage_0.0.4b.apk)
+
 <h3>License</h3>
 
 *Use of FPBioimage requires a citation of the original publication of the software in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). If FPBioimage is used to share data published in an academic journal, the original publication must be acknowledged in the references section of the publication.*
