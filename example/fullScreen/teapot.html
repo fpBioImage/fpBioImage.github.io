@@ -19,33 +19,8 @@
   <!-- END OF REQUIRED EDITS -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <style>
-    html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif; color: white;}
-    * {margin: 0; padding:0;}
-    div.header {
-    background-color: #141414;
-    height: 40px;
-    width: 100%;
-  }
-  div.footer {
-    position: absolute;
-    background-color: #141414;
-    height: 40px;
-    width: 100%;
-    bottom: 0;
-  }
-  div.fullBrowserWindow {
-    position: absolute;
-    width: 100%;
-    height: calc(100% - 80px);
-  }
-  div.fullBrowserWindow canvas {
-    width: 100%;
-    height: 100%;
-  }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="fpcss.css">
 </head>
 <body>
 
@@ -61,9 +36,40 @@ var s = document.createElement("script");
 </script>
 
 <!-- Header -->
-<div class="header">
-  Hello world
-</div>
+<nav>
+  <ul>
+    <li>
+      <a href=#><strong>FPBioimage</strong></a>
+    </li>
+    <li>
+      <a href=#>Example Data</a>
+      <ul>
+        <li><a href=#>Mouse</a></li>
+        <li><a href=#>MRI Head</a></li>
+        <li><a href=#>Fun<span>></span></a>
+          <ul>
+            <li><a href=#>Teapot</a></li>
+            <li><a href=#>Lemon</a></li>
+          </ul>
+        </li>
+        <li><a href=#>Wavefunctions<span>></span></a>
+          <ul>
+            <li><a href=#>1s</a></li>
+            <li><a href=#>2p</a></li>
+            <li><a href=#>3d</a></li>
+            <li><a href=#>4f</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href=#>Videos</a>
+    </li>
+    <li>
+      <a href=#>Project Page</a>
+    </li>
+  </ul>
+</nav>
 
 <!-- Put the WebGL Canvas in here-->
 <div class="fullBrowserWindow">
@@ -72,9 +78,25 @@ var s = document.createElement("script");
 
 <!-- Footer -->
 <div class="footer">
-  Goodbye world
+  <table style="width:100%"><tr>
+    <td style="text-align:left; width:50%; height:100%;"><p style="vertical-align:middle; padding:0 0 0 1em;">Image credit: Utah Teapot (widely available)</p></td>
+    <td style="text-align:right; width:50%; height:100%;">
+      <div class="info" onclick="showInfoPopup()"><img src="info.png" height="36px" alt="Info" style="vertical-align:middle;"/>
+      <span class="popuptext" id="infopop">The Utah teapot is widely used as a 'hello world' model for 3D rendering programs.</span></div>
+      <img src="fullscreen.png" height="36px" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" style="vertical-align:middle;" /></td>
+  </tr></table>
 </div>
 
+
+<!-- Info popup script-->
+<script type="text/javascript">
+// When the user clicks on <div>, open the popup
+function showInfoPopup() {
+    var popup = document.getElementById("infopop");
+    popup.classList.toggle("show");
+    console.log("I was clicked.");
+}
+</script>
 
 <!-- Load the FPBioimage viewer -->
 <div id="scriptLoader"> </div>
