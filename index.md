@@ -13,7 +13,7 @@ title: FPBioimage Project Page
 </script>
 
 <div class="imageBox">
-<a href="/example/">
+<a href="/demo/">
 
 <img src="/public/fpbScreenshot.png" alt="Screenshot of FPBioimage running on an example website.">
 <p>FPBioimage example website.</p>
@@ -28,7 +28,7 @@ title: FPBioimage Project Page
 <em>Welcome to the FPBioimage project page.</em>
 <br><br>
 FPBioimage is a volumetric visualization tool which runs in all modern web browsers.
-Try the tool yourself at our example site <a href="/example/">here</a>.
+Try the tool yourself at our example site <a href="/demo/">here</a>.
 
 </div>
 
