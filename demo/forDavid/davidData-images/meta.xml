@@ -1,0 +1,15 @@
+<root>
+<name>davidData (ARGB rendering) (frame 0) (resized)</name>
+<meta>
+<pixelSizeX>1</pixelSizeX>
+<pixelSizeY>1</pixelSizeY>
+<pixelSizeZ>1</pixelSizeZ>
+<timeInterval>0</timeInterval>
+<channelName0>red</channelName0>
+<channelName1>green</channelName1>
+<channelName2>blue</channelName2>
+<channelName3>alpha</channelName3>
+</meta>
+<rois/>
+<overlays/>
+</root>
