@@ -1,4 +1,9 @@
-// First, should do some checking of paths: if last character in string is / then remove it!
+// Change pathToImages to an absolute path
+var link = document.createElement("a");
+link.href = pathToImages;
+pathToImages = (link.protocol+"//"+link.host+link.pathname+link.search+link.hash);
+
+// Next, should do some checking of paths: if last character in string is / then remove it!
 if (pathToImages.slice(-1) === "/"){
   pathToImages = pathToImages.slice(0,-1);
 }
@@ -13,7 +18,7 @@ function nextPow2( aSize ){
   return Math.pow( 2, Math.ceil( Math.log( aSize ) / Math.log( 2 ) ) );
 }
 
-firstImage = pathToFPBioimage + "/../" + pathToImages + "/" + imagePrefix + numberingFormat + ".png";
+firstImage = pathToImages + "/" + imagePrefix + numberingFormat + ".png";
 
 var img = new Image();
 
