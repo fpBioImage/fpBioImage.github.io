@@ -5,17 +5,23 @@ title: Downloads
 
 <script>
     str = '<ul id="subheadings">' +
+    '<li><a href="../biulds/Fpbioimage_helper_1.0.0.jar">ImageJ plugin</a></li>' +
+    '<li><a href="http://icy.bioimageanalysis.org/plugins/fpbioimagehelper">Icy plugin</a></li>'
     '<li><a href="../builds/FPBioimage.zip">FPBioimage</a></li>' +
     '<li><a href="../builds/Template-Website.zip">Template</a></li>' +
     '<li><a href="https://github.com/fpBioImage/assets">Source</a></li></ul>';    
     document.getElementById("subheadings/downloads/").innerHTML = str;
 </script>
 
+* [ImageJ and FIJI plugin](../builds/Fpbioimage_helper_1.0.0.jar)
+* [Icy plugin](http://icy.bioimageanalysis.org/plugins/fpbioimagehelper)
+
 * [FPBioimage](../builds/FPBioimage.zip) (for integration into a website)
 * [Website Template](../builds/Template-Website.zip) (including FPBioimage)
 * [Source](https://github.com/fpBioImage/assets)
 
 * [Android App](../builds/VRBioImage_0.0.4b.apk)
+* iOS app coming soon to the app store!
 
 <h3>License</h3>
 
