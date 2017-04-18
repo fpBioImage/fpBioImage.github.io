@@ -4,22 +4,39 @@ title: Sharing guide
 ---
 
 <script>
-    str = '<ul id="subheadings"><li><a href="#preparing">Preparing Images</a></li>' +
-    '<li><a href="#simple">Simple Webpage</a></li>' +
-    '<li><a href="#advanced">Advanced Webpage</a></li></ul>';
+    str = '<ul id="subheadings"><li><a href="#basic">Basic Usage</a></li>' +
+    '<li><a href="#advanced">Advanced</a></li></ul>';
     document.getElementById("subheadings/sharingGuide/").innerHTML = str;
 </script>
 
-<h3> Introduction </h3>
-This guide provides instruction on sharing volumetric image data using the FPBioimage. The guide is complemented by an [instructional video](https://www.youtube.com/watch?v=sdEQ59pYzSY).
+**_Don't forget to [cite](https://doi.org/10.1038/nphoton.2016.273)!_**
+_If you use FPBioimage to share your data, please cite our original publication in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). This is required by the [license](#license)!_
 
-You can also download this guide as a [PDF file](../sharingGuide.pdf).
+<h3 id="basic"> Basic Usage: <em> ImageJ & Icy Plugins </em> </h3>
 
-<h3>License</h3>
+**ImageJ or FIJI**
+1. Download the ImageJ plugin from [downloads](../downloads/)
+2. Install the plugin by copying the .jar file to the ImageJ /plugins/ folder
+    * Close and re-open ImageJ if necessary to complete installation
+3. Open your 3D data, and adjust the color map or histogram as appropriate
+4. Choose Plugins -> FPBioimage Helper to start the helper
+5. Fill in the fields and click OK
+6. Save the webpage to a mapped server folder or to a Github IO folder, or on your local computer for uploading later with e.g. FTP
+    * If you choose to upload later, make sure you keep the file struture the same
 
-*Use of FPBioimage requires a citation of the original publication of the software in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). If FPBioimage is used to share data published in an academic journal, the original publication must be acknowledged in the references section of the publication.*
+**Icy**
+1. Open your 3D data, and adjust the color maps and histograms as appropriate
+2. Run the fpbioimagehelper plugin using the search bar within Icy
+    * Note the plugin will download and install automatically if necessary
+3. Fill in the fields and click the 'play' button (►)
+4. Save the webpage to a mapped server folder or to a Github IO folder, or on your local computer for uploading later with e.g. FTP
+    * If you choose to upload later, make sure you keep the file struture the same
 
-*First Person Bioimage (FPBioimage) is distributed under the [Creative Commons Attribution - ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/). This means that, providing you credit the original software appropriately, you are free to copy, redistribute, remix, transform and build upon the software, as long as future contributions are distributed under the same license.*
+<h3 id="advanced"> Advanced Users </h3>
+
+If you want to create your own website from scratch, you can download FPBioimage directly as a zip file. You will need to prepare your images as a stack of PNG files and enter some javascript parameters into your webpage for correct rendering of the data.
+
+You can also download this advanced guide as a [PDF file](../sharingGuide.pdf).
 
 <h3> Installing the viewer on your web server </h3>
 
@@ -39,7 +56,7 @@ The *Scale* function in ImageJ can be used to adjust the image stack to an appro
 Before saving in PNG format, the data must be rendered as an RGB image. Do this by selecting Image ► Color ► Stack to RGB. Uncheck “Keep Source”, and click OK.  
 The stack can then be saved as PNG slices using File ► Save As ► Image Sequence, and selecting PNG as the Format.
 
-<h3 id="simple">Creating a simple webpage for the viewer</h3>
+<h3 id="simplepage">Creating a simple webpage for the viewer</h3>
 FPBioimage runs on a webpage. In order to display volumetric data correctly the webpage requires some information about the data, for example the location of the images and the voxel size.
 
 **Modifying the provided website template**  
@@ -47,7 +64,7 @@ The simplest way to display your 3D data online is to modify the provided websit
 You are free to modify and embellish the template webpage as you see fit for your website.
 
 
-<h3 id="advanced">Advanced webpage creation</h3>
+<h3 id="advancedpage">Advanced webpage creation</h3>
 **Creating your own webpage**  
 To create your own FPBioimage webpage from scratch requires the definition of several Javascript variables, a Javascript file to be called, and a WebGL canvas which needs to be included in the body of the webpage.
 
@@ -84,6 +101,12 @@ Note that if you want to preview the webpage offline on your local computer (i.e
 
 <h3 id="assistance">Further assistance</h3>  
 We are happy to provide further assistance to help you share your 3D data online. Email the developer at [fpBioimage@gmail.com](mailto:fpBioimage@gmail.com).
+
+<h3 id="license">License</h3>
+
+*Use of FPBioimage requires a citation of the original publication of the software in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). If FPBioimage is used to share data published in an academic journal, the original publication must be acknowledged in the references section of the publication.*
+
+*First Person Bioimage (FPBioimage) is distributed under the [Creative Commons Attribution - ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/). This means that, providing you credit the original software appropriately, you are free to copy, redistribute, remix, transform and build upon the software, as long as future contributions are distributed under the same license.*
 
 <a href="(https://creativecommons.org/licenses/by-sa/4.0/)">
 <img src="/public/cc.png" style="display:inline; height:2em" alt="This software is covered by a Creative Commons Share Alike License, version 4.0"><img src="/public/cc-by.png" style="display:inline; height:2em" alt="You must give appropriate credit, provide a link to the license, and indicate if changes were made."><img src="/public/cc-sa.png" style="display:inline; height:2em" alt="You must distribute your contributions under the same license as the original.">
