@@ -32,8 +32,11 @@ Try the tool yourself at our example site <a href="/demo/">here</a>.
 
 </div>
 
+**_Don't forget to [cite](https://doi.org/10.1038/nphoton.2016.273)!_**
 
-<h3 id="viewing">Usage: Viewing</h3>
+_If you use FPBioimage to share your data, please cite our original publication in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). This is required by the [license](#license)!_
+
+<h3 id="viewing">Usage: Viewing Data</h3>
 FPBioimage is easy to use by clicking and dragging with the mouse.  
 To utilize its more advanced features, watch the instructional video below.
 
@@ -41,7 +44,7 @@ To utilize its more advanced features, watch the instructional video below.
   <iframe width="560" height="315" src="https://www.youtube.com/embed/tdYwFqOrN44?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<h3 id="sharing">Usage: Sharing</h3>
+<h3 id="sharing">Usage: Sharing Data</h3>
 To use FPBioimage for sharing your own data, watch the video below or follow the [sharing guide](/sharingGuide).
 
 <div class="videoWrapper">
@@ -56,7 +59,7 @@ To contribute to FPBioimage, fork our git repository. This contains the Unity as
 <h3 id="bugs">Report a bug</h3>
 If you have found a bug, please [report an issue](https://github.com/fpBioImage/assets/issues).
 
-<h3>License</h3>
+<h3 id="license">License</h3>
 
 *Use of FPBioimage requires a citation of the original publication of the software in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). If FPBioimage is used to share data published in an academic journal, the original publication must be acknowledged in the references section of the publication.*
 

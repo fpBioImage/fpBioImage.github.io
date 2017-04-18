@@ -10,9 +10,10 @@ title: Sharing guide
 </script>
 
 **_Don't forget to [cite](https://doi.org/10.1038/nphoton.2016.273)!_**
+
 _If you use FPBioimage to share your data, please cite our original publication in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). This is required by the [license](#license)!_
 
-<h3 id="basic"> Basic Usage: <em> ImageJ & Icy Plugins </em> </h3>
+<h3 id="basic">Basic Usage</h3>
 
 **ImageJ or FIJI**
 1. Download the ImageJ plugin from [downloads](../downloads/)

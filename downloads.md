@@ -13,6 +13,10 @@ title: Downloads
     document.getElementById("subheadings/downloads/").innerHTML = str;
 </script>
 
+**_Don't forget to [cite](https://doi.org/10.1038/nphoton.2016.273)!_**
+
+_If you use FPBioimage to share your data, please cite our original publication in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). This is required by the [license](#license)!_
+
 * [ImageJ and FIJI plugin](../builds/Fpbioimage_helper_1.0.0.jar)
 * [Icy plugin](http://icy.bioimageanalysis.org/plugins/fpbioimagehelper)
 
@@ -23,7 +27,7 @@ title: Downloads
 * [Android App](../builds/VRBioImage_0.0.4b.apk)
 * iOS app coming soon to the app store!
 
-<h3>License</h3>
+<h3 id="license">License</h3>
 
 *Use of FPBioimage requires a citation of the original publication of the software in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). If FPBioimage is used to share data published in an academic journal, the original publication must be acknowledged in the references section of the publication.*
 
