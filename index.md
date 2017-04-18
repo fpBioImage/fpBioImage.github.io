@@ -32,6 +32,8 @@ Try the tool yourself at our example site <a href="/demo/">here</a>.
 
 </div>
 
+<br><br>
+
 **_Don't forget to [cite](https://doi.org/10.1038/nphoton.2016.273)!_**
 
 _If you use FPBioimage to share your data, please cite our original publication in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). This is required by the [license](#license)!_
