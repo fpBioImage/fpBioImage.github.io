@@ -32,7 +32,7 @@ Try the tool yourself at our example site <a href="/demo/">here</a>.
 
 </div>
 
-<br><br>
+&nbsp;
 
 **_Don't forget to [cite](https://doi.org/10.1038/nphoton.2016.273)!_**
 
