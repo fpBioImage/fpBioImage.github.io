@@ -23,22 +23,23 @@
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <style>
-    html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif}
+    html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif; margin:0}
     .mySlides {display:none}
     .w3-left, .w3-right, .w3-tag {cursor:pointer}
     .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+    #fullBrowserWindow canvas {width:100%;height:100%;}
   </style>
 
 </head>
 <body>
 
 <!-- Heading -->
-<div class = "w3-top w3-center w3-large w3-purple" style="height:80px">
+<div class = "w3-center w3-large w3-purple" style="height:80px">
 <h1>MOF Uptake</h1>
 </div>
 
 <!-- Navbar -->
-<div class = "w3-top" style="margin-top:80px">
+<nav>
   <ul class="w3-navbar w3-left-align w3-light-grey w3-center w3-large">
     <li class="w3-left" style="width:33% "><a href="../index.html">Home</a></li>
     <li class="w3-dropdown-hover" style="width:33%">
@@ -54,7 +55,7 @@
     </li>
     <li class="w3-left" style="width:33%"><a href="../about.html">About</a></li>
   </ul>
-</div>
+</nav>
 
 <!-- Progress bar -->
 <div id="jsHolder"> </div>
@@ -68,7 +69,7 @@ var s1 = document.createElement("script");
 </script>
 
 <!-- Rest of the website -->
-<div class="w3-content w3-container w3-center" style="max-width:992px;margin-top:140px;margin-bottom:80px">
+<div class="w3-content w3-container w3-center" style="max-width:992px;margin-bottom:80px">
   <!-- Title -->
   <div class="w3-section">
     <h2><b>8 hours</b></h2>
