@@ -64,5 +64,5 @@ img.onload = function(){
 }
 
 //Load in that image, which should start everything else!
-var fpcanvas;
+var fpcanvas = null;
 img.src = firstImage;
