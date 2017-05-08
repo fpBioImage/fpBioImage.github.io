@@ -21,19 +21,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="../resources/fpcss.css">
+
 </head>
 <body>
 
-<!-- Progress bar -->
-<div id="scriptProgress"> </div>
-<script type="text/javascript">
-var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.src = pathToFPBioimage + "/Progress.js";
-    s.innerHTML = null;
-    document.getElementById("scriptProgress").innerHTML = "";
-    document.getElementById("scriptProgress").appendChild(s);
-</script>
+  <div id="jsHolder"></div>
+
+  <script type="text/javascript">
+  var s1 = document.createElement("script");
+      s1.type = "text/javascript";
+      s1.src = pathToFPBioimage + "/FPProgress.js";
+      s1.innerHTML = null;
+      document.getElementById("jsHolder").innerHTML = "";
+      document.getElementById("jsHolder").appendChild(s1);
+  </script>
 
 <!-- Header -->
 <nav w3-include-html="navMenu.html">
@@ -89,10 +90,8 @@ var s = document.createElement("script");
   </ul>
 </nav>
 
-<!-- Put the WebGL Canvas in here-->
-<div class="fullBrowserWindow">
-  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-</div>
+<!-- The WebGL canvas lives here-->
+<div id="fullBrowserWindow"></div>
 
 <!-- Footer -->
 <div class="footer">
@@ -101,7 +100,7 @@ var s = document.createElement("script");
     <td style="text-align:right; width:50%; height:100%;">
       <div class="info" onclick="showInfoPopup()"><img src="../resources/info.png" height="36px" alt="Info" style="vertical-align:middle;"/>
       <span class="popuptext" id="infopop">Blastoderm-stage Embryo. The nucleus is labelled in green and the membrane in magenta. Click <a href="http://www.nature.com/nmeth/journal/v12/n12/fig_tab/nmeth.3632_SV6.html"> here </a> for the paper this data was originally published in. </span></div>
-      <img src="../resources/fullscreen.png" height="36px" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" style="vertical-align:middle;" /></td>
+      <img src="../resources/fullscreen.png" height="36px" alt="Fullscreen" title="Fullscreen" onclick="fpcanvas.SetFullscreen(1);" style="vertical-align:middle;" /></td>
   </tr></table>
 </div>
 
@@ -112,17 +111,6 @@ function showInfoPopup() {
     var popup = document.getElementById("infopop");
     popup.classList.toggle("show");
 }
-</script>
-
-<!-- Load the FPBioimage viewer -->
-<div id="scriptLoader"> </div>
-<script type="text/javascript">
-var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.src = pathToFPBioimage + "/FPBioimageLoader.js";
-    s.innerHTML = null;
-    document.getElementById("scriptProgress").innerHTML = "";
-    document.getElementById("scriptProgress").appendChild(s);
 </script>
 
 <!-- Google Analytics-->

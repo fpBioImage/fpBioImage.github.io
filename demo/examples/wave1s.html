@@ -28,14 +28,14 @@
 <body>
 
 <!-- Progress bar -->
-<div id="scriptProgress"> </div>
+<div id="jsHolder"></div>
 <script type="text/javascript">
-var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.src = pathToFPBioimage + "/Progress.js";
-    s.innerHTML = null;
-    document.getElementById("scriptProgress").innerHTML = "";
-    document.getElementById("scriptProgress").appendChild(s);
+var s1 = document.createElement("script");
+    s1.type = "text/javascript";
+    s1.src = pathToFPBioimage + "/FPProgress.js";
+    s1.innerHTML = null;
+    document.getElementById("jsHolder").innerHTML = "";
+    document.getElementById("jsHolder").appendChild(s1);
 </script>
 
 <!-- Header -->
@@ -93,9 +93,7 @@ var s = document.createElement("script");
 </nav>
 
 <!-- Put the WebGL Canvas in here-->
-<div class="fullBrowserWindow">
-  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-</div>
+<div id="fullBrowserWindow"></div>
 
 <!-- Footer -->
 <div class="footer">
@@ -115,17 +113,6 @@ function showInfoPopup() {
     var popup = document.getElementById("infopop");
     popup.classList.toggle("show");
 }
-</script>
-
-<!-- Load the FPBioimage viewer -->
-<div id="scriptLoader"> </div>
-<script type="text/javascript">
-var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.src = pathToFPBioimage + "/FPBioimageLoader.js";
-    s.innerHTML = null;
-    document.getElementById("scriptProgress").innerHTML = "";
-    document.getElementById("scriptProgress").appendChild(s);
 </script>
 
 <!-- Google Analytics-->

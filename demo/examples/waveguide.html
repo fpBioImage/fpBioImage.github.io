@@ -30,14 +30,14 @@
 <body>
 
 <!-- Progress bar -->
-<div id="scriptProgress"> </div>
+<div id="jsHolder"></div>
 <script type="text/javascript">
-var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.src = pathToFPBioimage + "/Progress.js";
-    s.innerHTML = null;
-    document.getElementById("scriptProgress").innerHTML = "";
-    document.getElementById("scriptProgress").appendChild(s);
+var s1 = document.createElement("script");
+    s1.type = "text/javascript";
+    s1.src = pathToFPBioimage + "/FPProgress.js";
+    s1.innerHTML = null;
+    document.getElementById("jsHolder").innerHTML = "";
+    document.getElementById("jsHolder").appendChild(s1);
 </script>
 
 <!-- Header -->
@@ -95,9 +95,7 @@ var s = document.createElement("script");
 </nav>
 
 <!-- Put the WebGL Canvas in here-->
-<div class="fullBrowserWindow">
-  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-</div>
+<div id="fullBrowserWindow"></div>
 
 <!-- Footer -->
 <div class="footer">
@@ -119,17 +117,6 @@ function showInfoPopup() {
 }
 </script>
 
-<!-- Load the FPBioimage viewer -->
-<div id="scriptLoader"> </div>
-<script type="text/javascript">
-var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.src = pathToFPBioimage + "/FPBioimageLoader.js";
-    s.innerHTML = null;
-    document.getElementById("scriptProgress").innerHTML = "";
-    document.getElementById("scriptProgress").appendChild(s);
-</script>
-
 <!-- Google Analytics-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -139,51 +126,6 @@ var s = document.createElement("script");
   ga('create', 'UA-81641410-1', 'auto');
   ga('send', 'pageview');
 </script>
-
-</body>
-</html>
-
-
-  <!-- Full screen button -->
-  <div class="w3-container w3-center" style="padding:0px">
-    <table><tr>
-      <td style="vertical-align:middle; text-align:left"><h4>Images generated with Meep. </h4></td>
-      <td style="vertical-align:middle; text-align:right"><img src="../resources/fullscreen.png" height="40px" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></td>
-    </tr></table>
-  </div>
-
-  <!-- Grid -->
-  <div class="w3-row">
-    <div class="w3-col l6 m6 w3-light-grey w3-padding-large" style="min-height:200px">
-      <h3>About the Images</h3>
-      <p> 3D waveguide generated with Meep.  </p>
-    </div>
-
-    <div class="w3-col l6 m6 w3-grey w3-padding-large" style="min-height:200px">
-      <h3>First Person Controls</h3>
-      <div style="text-align:left; margin-left:12.5%; width:75%">
-        <table>
-          <tr> <td> <b> WASD </b> </td> <td style="width:40px; text-align:center"> &mdash; </td> <td> Move </td> </tr>
-          <tr> <td> <b> F </b> </td> <td style="width:40px; text-align:center"> &mdash; </td> <td> Un/freeze mouse movement </td> </tr>
-          <tr> <td> <b> H </b> </td> <td style="width:40px; text-align:center"> &mdash; </td> <td> Hide/show grid </td> </tr>
-          <tr style="height:10px"> <td colspan="3" style="padding:0px; margin:0px"> </td> </tr>
-          <tr> <td colspan="3" style="text-align:center; font-style:italic"> Press M for a full list of controls</td> </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-hor-32 w3-white w3-center">
-  <p> <a href="http://laser.ceb.cam.ac.uk/directory/marcus-fantham" class="w3-text-teal">&copy; Marcus Fantham </a></p>
-  <img src="../resources/LAGlogo.png" width="65%" alt="Laser Analytics Group"><img src="../resources/cambridgeLogo.png" width="25%" alt="University of Cambridge">
-</footer>
-</div>
-
-
-<!-- Load the FPBioimage viewer -->
-<div id="scriptLoader"> </div>
-<script src="../FPBioimage/FPBioimageLoader.js"></script>
 
 </body>
 </html>
