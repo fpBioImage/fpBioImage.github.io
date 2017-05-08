@@ -54,7 +54,7 @@ img.onload = function(){
   }
   console.log("Total memory requested from browser: " + memorySize + " bytes (" + (memorySize/Math.pow(2,30)).toPrecision(4) + " GiB)");
 
-  var fpcanvas = UnityLoader.instantiate("fullBrowserWindow", pathToFPBioimage + "/FPBioimage.json", {onProgress: UnityProgress, Module: {TOTAL_MEMORY: memorySize,
+  fpcanvas = UnityLoader.instantiate("fullBrowserWindow", pathToFPBioimage + "/FPBioimage.json", {onProgress: UnityProgress, Module: {TOTAL_MEMORY: memorySize,
       onRuntimeInitialized: function () {
       UnityProgress(fpcanvas, "complete");
       }
