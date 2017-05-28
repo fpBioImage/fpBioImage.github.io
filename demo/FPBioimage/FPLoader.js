@@ -1,4 +1,3 @@
-
 // COPY all of this file into the bottom of UnityLoader every re-compile
 
 // Change pathToImages to an absolute path
@@ -30,7 +29,7 @@ img.onload = function(){
   var imWidth = img.width;
 
   // code here to use the dimensions
-  var maxTexturesPerSlice = Math.ceil(numberOfImages/4.0);
+  var maxTexturesPerSlice = Math.ceil(numberOfImages/8.0);
   var atlasWidth = nextPow2(imWidth);
   var atlasHeight = nextPow2(imHeight * numberOfImages);
 
