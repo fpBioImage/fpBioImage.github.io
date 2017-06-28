@@ -36,7 +36,7 @@ img.onload = function(){
   // code here to use the dimensions
   var maxTexturesPerSlice = Math.ceil(fpb.numberOfImages/8.0);
   var atlasWidth = nextPow2(imWidth);
-  var atlasHeight = nextPow2(imHeight * numberOfImages);
+  var atlasHeight = nextPow2(imHeight * fpb.numberOfImages);
 
   if (fpb.atlasMode == undefined){fpb.atlasMode = 'false';}
 
