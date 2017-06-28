@@ -37,7 +37,7 @@ img.onload = function(){
 
   if (fpb.atlasMode == 'true'){
     atlasWidth = imWidth;
-    atlasHeight = imheight;
+    atlasHeight = imHeight;
   } else {
     while ((atlasHeight > 2*atlasWidth) && (atlasHeight > imHeight)){
       atlasHeight /= 2;
