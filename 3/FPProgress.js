@@ -33,12 +33,12 @@ function UnityProgress(gameInstance, progress) {
 
 var s2 = document.createElement("script");
     s2.type = "text/javascript";
-    s2.src = pathToFPBioimage + "/UnityLoader.js";
+    s2.src = fpb.pathToFPBioimage + "/UnityLoader.js";
     s2.innerHTML = null;
     document.getElementById("jsHolder").appendChild(s2);
 
 var s3 = document.createElement("script");
     s3.type = "text/javascript";
-    s3.src = pathToFPBioimage + "/download.js";
+    s3.src = fpb.pathToFPBioimage + "/download.js";
     s3.innerHTML = null;
     document.getElementById("jsHolder").appendChild(s3);

@@ -2,15 +2,15 @@
 
 // Change pathToImages to an absolute path
 var link = document.createElement("a");
-link.href = pathToImages;
-pathToImages = (link.protocol+"//"+link.host+link.pathname+link.search+link.hash);
+link.href = fpb.pathToImages;
+fpb.pathToImages = (link.protocol+"//"+link.host+link.pathname+link.search+link.hash);
 
 // Get paths in a consistent format: if last character in string is / then remove it!
-if (pathToImages.slice(-1) === "/"){
-  pathToImages = pathToImages.slice(0,-1);
+if (fpb.pathToImages.slice(-1) === "/"){
+  fpb.pathToImages = fpb.pathToImages.slice(0,-1);
 }
-if (pathToFPBioimage.slice(-1) === "/"){
-  pathToFPBioimage = pathToFPBioimage.slice(0,-1);
+if (fpb.pathToFPBioimage.slice(-1) === "/"){
+  fpb.pathToFPBioimage = fpb.pathToFPBioimage.slice(0,-1);
 }
 
 // Calculate how much memory we need to request
@@ -20,7 +20,7 @@ function nextPow2( aSize ){
   return Math.pow( 2, Math.ceil( Math.log( aSize ) / Math.log( 2 ) ) );
 }
 
-firstImage = pathToImages + "/" + imagePrefix + numberingFormat + ".png";
+firstImage = fpb.pathToImages + "/" + fpb.imagePrefix + fpb.numberingFormat + ".png";
 
 var img = new Image();
 
@@ -29,17 +29,24 @@ img.onload = function(){
   var imWidth = img.width;
 
   // code here to use the dimensions
-  var maxTexturesPerSlice = Math.ceil(numberOfImages/8.0);
+  var maxTexturesPerSlice = Math.ceil(fpb.numberOfImages/8.0);
   var atlasWidth = nextPow2(imWidth);
   var atlasHeight = nextPow2(imHeight * numberOfImages);
 
-  while ((atlasHeight > 2*atlasWidth) && (atlasHeight > imHeight)){
-    atlasHeight /= 2;
-    atlasWidth *= 2;
+  if (fpb.atlasMode == undefined){fpb.atlasMode = 'false';}
+
+  if (fpb.atlasMode == 'true'){
+    atlasWidth = imWidth;
+    atlasHeight = imheight;
+  } else {
+    while ((atlasHeight > 2*atlasWidth) && (atlasHeight > imHeight)){
+      atlasHeight /= 2;
+      atlasWidth *= 2;
+    }
   }
 
   // Now how much memory do we need?
-  var numPixels = atlasHeight * atlasWidth * 4;
+  var numPixels = atlasHeight * atlasWidth * 8;
   var textureMemory = numPixels * 4;
 
   if (atlasWidth > 4096 && atlasHeight > 4096){
@@ -49,7 +56,7 @@ img.onload = function(){
   }
   console.log("Total memory requested from browser: " + memorySize + " bytes (" + (memorySize/Math.pow(2,30)).toPrecision(4) + " GiB)");
 
-  fpcanvas = UnityLoader.instantiate("fullBrowserWindow", pathToFPBioimage + "/FPBioimage.json", {onProgress: UnityProgress, Module: {TOTAL_MEMORY: memorySize,
+  fpcanvas = UnityLoader.instantiate("fullBrowserWindow", fpb.pathToFPBioimage + "/FPBioimage.json", {onProgress: UnityProgress, Module: {TOTAL_MEMORY: memorySize,
       onRuntimeInitialized: function () {
       UnityProgress(fpcanvas, "complete");
       }
