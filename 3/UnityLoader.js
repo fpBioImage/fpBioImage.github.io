@@ -54,7 +54,7 @@ img.onload = function(){
   var numPixels = atlasHeight * atlasWidth * 8;
   var textureMemory = numPixels * 4;
 
-  if (atlasWidth > 4096 && atlasHeight > 4096){
+  if (atlasWidth >= 4096 && atlasHeight >= 4096){
     memorySize = 1761607680; // Large textures have disproportionaly large memory requirements
   }else{
     memorySize = textureMemory + 134217728; // Add 128MB for other things
