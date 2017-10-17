@@ -1075,7 +1075,6 @@ var UnityLoader = UnityLoader || {
 
 };
 
-
 // COPY all of this file into the bottom of UnityLoader every re-compile
 
 // Change pathToImages to an absolute path
