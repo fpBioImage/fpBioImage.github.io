@@ -49,11 +49,14 @@ img.onload = function(){
   var numPixels = atlasHeight * atlasWidth * 8;
   var textureMemory = numPixels * 4;
 
-  if (atlasWidth > 4096 && atlasHeight > 4096){
-    memorySize = 1761607680; // Large textures have disproportionaly large memory requirements
-  }else{
+  if (atlasWidth < 4096 || atlasHeight < 4096){
     memorySize = textureMemory + 134217728; // Add 128MB for other things
+  } else if (atlasWidth < 8192 || atlasHeight < 8192){
+    memorySize = 1073741824;
+  } else {
+    memorySize = 1761607680; // Large textures have disproportionaly large memory requirements
   }
+
   console.log("Total memory requested from browser: " + memorySize + " bytes (" + (memorySize/Math.pow(2,30)).toPrecision(4) + " GiB)");
 
   fpcanvas = UnityLoader.instantiate("fullBrowserWindow", fpb.pathToFPBioimage + "/FPBioimage.json", {onProgress: UnityProgress, Module: {TOTAL_MEMORY: memorySize,
