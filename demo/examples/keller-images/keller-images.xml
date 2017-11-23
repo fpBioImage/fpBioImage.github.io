@@ -15,6 +15,7 @@
 </meta>
 <rois/>
 <overlays/>
+<<<<<<< HEAD
 <lut>
 <numChannel>4</numChannel>
 <scaler0>
@@ -278,4 +279,6 @@
 </alpha>
 </colormap3>
 </lut>
+=======
+>>>>>>> origin/master
 </root>
