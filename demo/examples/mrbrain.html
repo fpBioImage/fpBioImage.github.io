@@ -10,7 +10,7 @@
       fpb = {
         atlasMode: 'true', // True if providing pre-built texture atlases. Needs to be a string.
         imageAlpha: 'true', // True for exports from Icy for nice alpha blending
-        pathToFPBioimage: "http://fpb.ceb.cam.ac.uk/3",
+        pathToFPBioimage: "http://fpb.ceb.cam.ac.uk/dev3",
         pathToImages: "mrbrain-images/", // This is the path relative to this webpage
         uniqueName: "mrbrain", // Give this image stack a unique name for bookmarking to work correctly
         imagePrefix: "mrbrain_z", // The prefix of the image stack file names
@@ -19,9 +19,10 @@
         voxelSize: {x: 1.0, y: 1.0, z: 2.0}, // This just needs to be a ratio of x:y:z voxel size
         numberOfImages: 99, // Number of images in the stack
         sliceWidth: 256, sliceHeight: 256, // The width and height of the image slices (before padding)
-        opacity: 1, // Optional rendering parameter
-        intensity: 1.6, // Optional rendering parameter
-        threshold: 0.06 // Optional rendering parameter
+        opacity: 5, // Optional rendering parameter
+        intensity: 1.4, // Optional rendering parameter
+        threshold: 0.15, // Optional rendering parameter
+        projection: 2
       }
     </script>
     <!-- END OF REQUIRED EDITS -->
