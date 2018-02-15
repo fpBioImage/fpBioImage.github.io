@@ -7,33 +7,34 @@
 
   <!-- EDIT THIS JAVASCRIPT! -->
   <script type='text/javascript'>
-    pathToImages = "teapot-images/"; // This is the path relative to the FPBioimage parent folder
-    uniqueName = "teapot"; // Give this image stack a unique name for bookmarking to work correctly
-    numberOfImages = 111;  // Number of images in the stack
-    imagePrefix = "teapot_z";  // The prefix of the image stack file names
-    numberingFormat = "0000";  // eg. "000" for 000, 001, 002, 003 etc.
-    voxelSize = [1.0,1.0,2.0]; // This needs to be a ratio of x:y:z voxel size.
-
-    pathToFPBioimage = "../FPBioimage"; // The path to the FPBioimage folder from this webpage
+    fpb = {
+      pathToFPBioimage: "http://fpb.ceb.cam.ac.uk/4",
+      pathToImages: "teapot-images/", // This is the path relative to the FPBioimage parent folder
+      uniqueName: "teapot", // Give this image stack a unique name for bookmarking to work correctly
+      numberOfImages: 111,  // Number of images in the stack
+      imagePrefix: "teapot_z",  // The prefix of the image stack file names
+      numberingFormat: "0000",  // eg. "000" for 000, 001, 002, 003 etc.
+      voxelSize: [1.0,1.0,2.0] // This needs to be a ratio of x:y:z voxel size.
+    }
   </script>
   <!-- END OF REQUIRED EDITS -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="../resources/fpcss.css">
 </head>
 <body>
 
-<!-- Progress bar -->
-<div id="jsHolder"></div>
-<script type="text/javascript">
-var s1 = document.createElement("script");
-    s1.type = "text/javascript";
-    s1.src = pathToFPBioimage + "/FPProgress.js";
-    s1.innerHTML = null;
-    document.getElementById("jsHolder").innerHTML = "";
-    document.getElementById("jsHolder").appendChild(s1);
-</script>
+  <div id="jsHolder"></div>
+
+  <script type="text/javascript">
+  var s1 = document.createElement("script");
+      s1.type = "text/javascript";
+      s1.src = fpb.pathToFPBioimage + "/FPProgress.js";
+      s1.innerHTML = null;
+      document.getElementById("jsHolder").innerHTML = "";
+      document.getElementById("jsHolder").appendChild(s1);
+  </script>
 
 <!-- Header -->
 <nav w3-include-html="navMenu.html">
