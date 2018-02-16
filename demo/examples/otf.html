@@ -7,14 +7,15 @@
 
   <!-- EDIT THIS JAVASCRIPT! -->
   <script type='text/javascript'>
-    pathToImages = "otf"; // This is the path relative to the FPBioimage parent folder
-    uniqueName = "Trills OTF"; // Give this image stack a unique name for bookmarking to work correctly
-    numberOfImages = 269;  // Number of images in the stack
-    imagePrefix = "TRILLS_OTF_3D";  // The prefix of the image stack file names
-    numberingFormat = "000";  // eg. "000" for 000, 001, 002, 003 etc.
-    voxelSize = [1,1,1]; // This needs to be a ratio of x:y:z voxel size.
-
-    pathToFPBioimage = "../FPBioimage"; // The path to the FPBioimage folder from this webpage
+  fpb = {
+      pathToFPBioimage: "http://fpb.ceb.cam.ac.uk/4",
+      pathToImages: "otf", // This is the path relative to the FPBioimage parent folder
+      uniqueName: "Trills OTF", // Give this image stack a unique name for bookmarking to work correctly
+      numberOfImages: 269,  // Number of images in the stack
+      imagePrefix: "TRILLS_OTF_3D",  // The prefix of the image stack file names
+      numberingFormat: "000",  // eg. "000" for 000, 001, 002, 003 etc.
+      voxelSize: {x:1, y:1, z:1} // This needs to be a ratio of x:y:z voxel size.
+  }
   </script>
   <!-- END OF REQUIRED EDITS -->
 
