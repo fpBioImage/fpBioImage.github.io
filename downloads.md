@@ -5,10 +5,9 @@ title: Downloads
 
 <script>
     str = '<ul id="subheadings">' +
-    '<li><a href="../biulds/Fpbioimage_helper_1.0.0.jar">ImageJ plugin</a></li>' +
+    '<li><a href="https://github.com/fpBioImage/FPBioimageHelper-FIJI/releases">ImageJ plugin</a></li>' +
     '<li><a href="http://icy.bioimageanalysis.org/plugins/fpbioimagehelper">Icy plugin</a></li>'
-    '<li><a href="../builds/FPBioimage.zip">FPBioimage</a></li>' +
-    '<li><a href="../builds/Template-Website.zip">Template</a></li>' +
+    '<li><a href="../builds/template-webpage.html" download>Template</a></li>' +
     '<li><a href="https://github.com/fpBioImage/assets">Source</a></li></ul>';    
     document.getElementById("subheadings/downloads/").innerHTML = str;
 </script>
@@ -17,12 +16,11 @@ title: Downloads
 
 _If you use FPBioimage to share your data, please cite our original publication in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). This is required by the [license](#license)!_
 
-* [ImageJ and FIJI plugin](../builds/Fpbioimage_helper_1.0.0.jar)
+* [ImageJ and FIJI plugin](https://github.com/fpBioImage/FPBioimageHelper-FIJI/releases)
 * [Icy plugin](http://icy.bioimageanalysis.org/plugins/fpbioimagehelper)
 
-* [FPBioimage](../builds/FPBioimage.zip) (for integration into a website)
-* [Website Template](../builds/Template-Website.zip) (including FPBioimage)
-* [Source](https://github.com/fpBioImage/assets)
+* <a href="../builds/template-webpage.html" download>Webpage Template</a>
+* [Source](https://github.com/fpBioImage/unity)
 
 * [Android App](../builds/VRBioImage_0.0.4b.apk)
 * iOS app coming soon to the app store!

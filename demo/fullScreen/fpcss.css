@@ -16,14 +16,14 @@ div.footer {
   padding:0; margin:0;
 }
 
-div.fullBrowserWindow {
+div.fpbDiv {
   position: absolute;
   width: 100%;
   height: calc(100% - 80px);
   z-index: -1;
 }
 
-div.fullBrowserWindow canvas {
+div.fpbDiv canvas {
   width: 100vw;
   height: 100%;
   z-index: -1;
