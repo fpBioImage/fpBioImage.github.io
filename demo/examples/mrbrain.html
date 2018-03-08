@@ -122,6 +122,8 @@
     }
 
     var appDiv = document.getElementById("appDiv");
+
+    var link = document.createElement("a");
     link.href = fpb.pathToImages;
     fpb.pathToImages = (link.protocol+"//"+link.host+link.pathname+link.search+link.hash);
 
@@ -132,6 +134,7 @@
     if (fpb.pathToFPBioimage.slice(-1) === "/"){
       fpb.pathToFPBioimage = fpb.pathToFPBioimage.slice(0,-1);
     }
+
     var fpbAppLink = "fpbioimage://?f=" + btoa(JSON.stringify(fpb));
     var innerHTML = "<a href='" + fpbAppLink + "'><img src='../resources/app.png' height='36px' alt='Open in FPB app' style='vertical-align:middle;' /></a>";
 
