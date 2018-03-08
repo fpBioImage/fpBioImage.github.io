@@ -132,8 +132,8 @@
     if (fpb.pathToFPBioimage.slice(-1) === "/"){
       fpb.pathToFPBioimage = fpb.pathToFPBioimage.slice(0,-1);
     }
-    var link = "fpbioimage://?f=" + btoa(JSON.stringify(fpb));
-    var innerHTML = "<a href='" + link + "'><img src='../resources/app.png' height='36px' alt='Open in FPB app' style='vertical-align:middle;' /></a>";
+    var fpbAppLink = "fpbioimage://?f=" + btoa(JSON.stringify(fpb));
+    var innerHTML = "<a href='" + fpbAppLink + "'><img src='../resources/app.png' height='36px' alt='Open in FPB app' style='vertical-align:middle;' /></a>";
 
     if(navigator.userAgent.match(/Android/i) != null) {
       appDiv.innerHTML = innerHTML;
