@@ -1,6 +1,15 @@
+// A few javascript functions to control webpage interaction on the FPBioimage
+// demo website
+// M. Fantham 2018
+
 // When the user clicks on info div, open the popup
 function showInfoPopup() {
     var popup = document.getElementById("infopop");
+    popup.classList.toggle("show");
+}
+
+function showAppPopup() {
+    var popup = document.getElementById("apppop");
     popup.classList.toggle("show");
 }
 
@@ -20,8 +29,9 @@ if (fpb.pathToFPBioimage.slice(-1) === "/"){
 }
 
 var fpbAppLink = "fpbioimage://?f=" + btoa(JSON.stringify(fpb));
-var innerHTML = "<a href='" + fpbAppLink + "'><img src='../resources/app.png' height='36px' alt='Open in FPB app' style='vertical-align:middle;' /></a>";
+var innerHTML = "<span class='popuptext' id='apppop'><a href='http://fpb.ceb.cam.ac.uk/4/VRBioimage.apk'>Click here to download the FPBioimage Android app!</a></span><a onclick='showAppPopup()' href='" + fpbAppLink + "'><img src='../resources/app.png' height='36px' alt='Open in FPB app' style='vertical-align:middle;' /></a>";
 
+//if(navigator.userAgent.match(/Windows/i) != null) { // DEBUG LINE!
 if(navigator.userAgent.match(/Android/i) != null) {
   appDiv.innerHTML = innerHTML;
 }
