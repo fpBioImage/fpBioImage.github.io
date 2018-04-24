@@ -22,7 +22,7 @@ _If you use FPBioimage to share your data, please cite our original publication 
 * <a href="../builds/template-webpage.html" download>Webpage Template</a>
 * [Source](https://github.com/fpBioImage/unity)
 
-* [Android App](../4/VRBioImage.apk)
+* [Android App](../4/VRBioimage.apk)
 * iOS app coming soon to the app store!
 
 <h3 id="license">License</h3>
