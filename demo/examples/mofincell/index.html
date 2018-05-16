@@ -20,7 +20,7 @@
         sliceWidth: 409, sliceHeight: 409, // The width and height of the image slices (before padding)
         imageAlpha: "false", // True for exports from Icy for nice alpha blending
         opacity: 5.0, // Optional rendering parameter
-        intensity: 1.5, // Optional rendering parameter
+        intensity: 2.0, // Optional rendering parameter
         threshold: 0.05, // Optional rendering parameter
         projection: 1	// Volume renderer for RGB (0 for max intensity, 2 for RGBA)
       }
@@ -29,13 +29,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <style>
-      html,body,h1,h2,h3,h4,h5 {font-family: "Roboto", sans-serif}
-      body {overflow: hidden;}
-      * {margin: 0; padding:0;}
-      #fpbDiv {width:100%; height:100%; position: absolute;}
-      #fpbDiv canvas {width: 100%; height:100%;}
-    </style>
+    <link rel="stylesheet" href="../../resources/fpcss.css">
   </head>
   <body>
 
@@ -50,8 +44,88 @@
         document.getElementById("jsHolder").appendChild(s1);
     </script>
 
+    <!-- Header -->
+    <nav w3-include-html="navMenu.html">
+      <ul>
+        <li>
+          <a href=#><strong>FPBioimage</strong></a>
+        </li>
+        <li>
+          <a href="../../index.html">Example Data</a>
+          <ul>
+            <li><a href=#>Microscopy<span>></span></a>
+              <ul>
+                <li><a href="../mouse.html">Mouse Embryo - OPT</a></li>
+                <li><a href="../keller.html">Drosophilla Embryo - SPIM</a></li>
+                <li><a href="../wormEmbryo.html">C. Elegans - SPIM</a></li>
+                <li><a href="../mouseEmbryoHead.html">Mouse Embryo Head - SPIM</a></li>
+                <li><a href="../mito-cos7.html">Mitochondria - W-4PiSMSN</a></li>
+              </ul>
+            </li>
+            <li><a href=#>Medical Data<span>></span></a>
+              <ul>
+                <li><a href="../mrbrain.html">Head - MRI</a></li>
+                <li><a href="../cthead.html">Head - CT</a></li>
+              </ul>
+            </li>
+            <li><a href=#>Simulated Data<span>></span></a>
+              <ul>
+                <li><a href="../otf.html">OTF</a></li>
+                <li><a href="../waveguide.html">Waveguide field</a></li>
+              </ul>
+            </li>
+            <li><a href=#>Fun<span>></span></a>
+              <ul>
+                <li><a href="../teapot.html">Teapot</a></li>
+                <li><a href="../lemon.html">Lemon - MRI</a></li>
+              </ul>
+            </li>
+            <li><a href=#>Wavefunctions<span>></span></a>
+              <ul>
+                <li><a href="../wave1s.html">1s</a></li>
+                <li><a href="../wave2p.html">2p</a></li>
+                <li><a href="../wave3d.html">3d</a></li>
+                <li><a href="../wave4f.html">4f</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../../videos.html">Videos</a>
+        </li>
+        <li>
+          <a href="http://fpb.ceb.cam.ac.uk/">Project Page</a>
+        </li>
+      </ul>
+    </nav>
+
     <!-- Put the WebGL Canvas in here-->
     <div id="fpbDiv"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <table style="width:100%"><tr>
+        <td style="text-align:left; width:50%; height:100%;"><p style="vertical-align:middle; padding:0 0 0 1em;">Images from Stanford Volume Data Archive</p></td>
+        <td style="text-align:right; width:50%; height:100%;">
+          <span class="app info" id="appDiv"></span>
+          <div class="info" onclick="showInfoPopup()"><img src="../../resources/info.png" height="36px" alt="Info" style="vertical-align:middle;"/>
+          <span class="popuptext" id="infopop">Metal organic framework (MOF) taken up by a cell.</span></div>
+          <img src="../../resources/fullscreen.png" height="36px" alt="Fullscreen" title="Fullscreen" onclick="fpcanvas.SetFullscreen(1);" style="vertical-align:middle;" /></td>
+      </tr></table>
+    </div>
+
+    <!-- Info popup & app script-->
+    <script type="text/javascript" src="../../resources/fpdemo.js"></script>
+
+    <!-- Google Analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-81641410-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 
   </body>
 </html>
