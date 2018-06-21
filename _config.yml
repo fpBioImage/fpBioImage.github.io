@@ -5,13 +5,13 @@ permalink: pretty
 title: FPBioimage
 tagline: ''
 description: ''
-url: http://fpb.ceb.cam.ac.uk
+url: https://fpb.ceb.cam.ac.uk
 baseurl: "/"
 paginate_path: "posts/page:num"
 markdown: kramdown
 
 author:
   name: 'Marcus Fantham'
-  url: http://laser.ceb.cam.ac.uk/directory/marcus-fantham
+  url: https://laser.ceb.cam.ac.uk/directory/marcus-fantham
 
 paginate: 5

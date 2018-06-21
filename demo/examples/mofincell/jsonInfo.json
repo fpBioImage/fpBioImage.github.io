@@ -1,5 +1,5 @@
 {
-        "pathToFPBioimage": "http://fpb.ceb.cam.ac.uk/4",
+        "pathToFPBioimage": "https://fpb.ceb.cam.ac.uk/4",
         "pathToImages": "./",
         "uniqueName": "mofincell",
         "imagePrefix": "mofincell_z",

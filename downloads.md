@@ -6,7 +6,7 @@ title: Downloads
 <script>
     str = '<ul id="subheadings">' +
     '<li><a href="https://github.com/fpBioImage/FPBioimageHelper-FIJI/releases">ImageJ plugin</a></li>' +
-    '<li><a href="http://icy.bioimageanalysis.org/plugins/fpbioimagehelper">Icy plugin</a></li>'
+    '<li><a href="https://icy.bioimageanalysis.org/plugins/fpbioimagehelper">Icy plugin</a></li>'
     '<li><a href="../builds/template-webpage.html" download>Template</a></li>' +
     '<li><a href="https://github.com/fpBioImage/assets">Source</a></li></ul>';    
     document.getElementById("subheadings/downloads/").innerHTML = str;
@@ -17,7 +17,7 @@ title: Downloads
 _If you use FPBioimage to share your data, please cite our original publication in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). This is required by the [license](#license)!_
 
 * [ImageJ and FIJI plugin](https://github.com/fpBioImage/FPBioimageHelper-FIJI/releases)
-* [Icy plugin](http://icy.bioimageanalysis.org/plugins/fpbioimagehelper)
+* [Icy plugin](https://icy.bioimageanalysis.org/plugins/fpbioimagehelper)
 
 * <a href="../builds/template-webpage.html" download>Webpage Template</a>
 * [Source](https://github.com/fpBioImage/unity)

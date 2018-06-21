@@ -16,7 +16,7 @@ _If you use FPBioimage to share your data, please cite our original publication 
 <h3 id="basic">Basic Usage</h3>
 
 **ImageJ or FIJI**
-1. Install the FPBioimage plugin ([see here for update site details](http://imagej.net/Fpbioimage))
+1. Install the FPBioimage plugin ([see here for update site details](https://imagej.net/Fpbioimage))
 2. Open your 3D data, and adjust the color map or histogram as appropriate
 3. Ensure your image is in RGB format (Image -> Type -> RGB Color)
 4. Choose Plugins -> FPBioimage Helper to start the helper
@@ -40,7 +40,7 @@ Images must be saved as a stack of PNG files.
 The maximum resolution supported by FPBioimage is 500x500 pixels, and 500 images.  
 The smaller the image size, the shorter the loading time will be for those viewing your data.
 
-To prepare volumetric imaging data for the viewer manually we recommend the use of [ImageJ](http://fiji.sc/), an open-source imaging processing package. Whilst these instructions explain how to prepare your images using ImageJ, any image processing software which will prepare images to the specification above can be used.
+To prepare volumetric imaging data for the viewer manually we recommend the use of [ImageJ](https://fiji.sc/), an open-source imaging processing package. Whilst these instructions explain how to prepare your images using ImageJ, any image processing software which will prepare images to the specification above can be used.
 
 The *Scale* function in ImageJ can be used to adjust the image stack to an appropriate size.  
 Before saving in PNG format, the data must be rendered as an RGB image. Do this by selecting Image ► Color ► Stack to RGB. Uncheck “Keep Source”, and click OK.  
@@ -70,7 +70,7 @@ The following JSON variable need to be defined in the header of the webpage (i.e
 | `fpb.voxelSize.x` | float | `1.5` | The x in the ratio of x:y:z voxel size. |
 | `fpb.voxelSize.y` | float | `1.5` | The y in the ratio of x:y:z voxel size. |
 | `fpb.voxelSize.z` | float | `2.0` | The z in the ratio of x:y:z voxel size. |
-| `pathToFPBioimage` | string | `http://fpb.ceb.cam.ac.uk/4` | This tells the webpage to use version 4 of FPBioimage. |
+| `pathToFPBioimage` | string | `https://fpb.ceb.cam.ac.uk/4` | This tells the webpage to use version 4 of FPBioimage. |
 
 The FPBioimage viewer should be included in the body of the webpage using the following HTML snippet:
 
