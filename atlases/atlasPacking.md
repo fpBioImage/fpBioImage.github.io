@@ -1,4 +1,4 @@
-#FPBioimage
+# FPBioimage
 ## Atlas Packing
 For fast loading of z-stacks to the GPU, FPBioimage uses [texture atlases](https://en.wikipedia.org/wiki/Texture_atlas). To save download time, these texture atlases can be provided directly to FPBioimage.
 
@@ -124,11 +124,12 @@ for a in range(0, numberOfAtlases):
 ```
 
 This python code results in the follow array of atlases:
->![Atlas 0](atlas0.png)
->![Atlas 1](atlas1.png)
->![Atlas 2](atlas2.png)
->![Atlas 3](atlas3.png)
->![Atlas 4](atlas4.png)
->![Atlas 5](atlas5.png)
->![Atlas 6](atlas6.png)
->![Atlas 7](atlas7.png)
+
+<kbd><img alt="Atlas 0" src="atlas0.png" width="100px" /></kbd>
+<kbd><img alt="Atlas 1" src="atlas1.png" width="100px" /></kbd>
+<kbd><img alt="Atlas 2" src="atlas2.png" width="100px" /></kbd>
+<kbd><img alt="Atlas 3" src="atlas3.png" width="100px" /></kbd>
+<kbd><img alt="Atlas 4" src="atlas4.png" width="100px" /></kbd>
+<kbd><img alt="Atlas 5" src="atlas5.png" width="100px" /></kbd>
+<kbd><img alt="Atlas 6" src="atlas6.png" width="100px" /></kbd>
+<kbd><img alt="Atlas 7" src="atlas7.png" width="100px" /></kbd>
