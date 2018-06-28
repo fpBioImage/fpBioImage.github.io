@@ -133,3 +133,4 @@ This python code results in the follow array of atlases:
 <kbd><img alt="Atlas 5" src="atlas5.png" width="100px" /></kbd>
 <kbd><img alt="Atlas 6" src="atlas6.png" width="100px" /></kbd>
 <kbd><img alt="Atlas 7" src="atlas7.png" width="100px" /></kbd>
+Note that the pixels surrounding the image slices have values of (0,0,0,0), i.e. black and fully transparent. Click on them for a clearer view. 
