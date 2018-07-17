@@ -31,8 +31,8 @@ function UnityProgress(gameInstance, progress) {
   gameInstance.progress.full.style.width = (98 * progress) + "%";
 }
 
-if (fpb.pathToImages == undefined){
-  fpb.pathToImages = "https://fpb.ceb.cam.ac.uk/4";
+if (fpb.pathToFPBioimage == undefined){
+  fpb.pathToFPBioimage = "https://fpb.ceb.cam.ac.uk/4";
 }
 
 if (document.getElementById("jsHolder") == null){
