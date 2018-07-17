@@ -24,9 +24,6 @@ fpb.pathToImages = (link.protocol+"//"+link.host+link.pathname+link.search+link.
 if (fpb.pathToImages.slice(-1) === "/"){
   fpb.pathToImages = fpb.pathToImages.slice(0,-1);
 }
-if (fpb.pathToFPBioimage.slice(-1) === "/"){
-  fpb.pathToFPBioimage = fpb.pathToFPBioimage.slice(0,-1);
-}
 
 var fpbAppLink = "fpbioimage://?f=" + btoa(JSON.stringify(fpb));
 var innerHTML = "<span class='popuptext' id='apppop'><a href='https://fpb.ceb.cam.ac.uk/4/VRBioimage.apk'>Click here to download the FPBioimage Android app!</a></span><a onclick='showAppPopup()' href='" + fpbAppLink + "'><img src='../resources/app.png' height='36px' alt='Open in FPB app' style='vertical-align:middle;' /></a>";
