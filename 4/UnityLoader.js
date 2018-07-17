@@ -10,6 +10,11 @@ var link = document.createElement("a");
 link.href = fpb.pathToImages;
 fpb.pathToImages = (link.protocol+"//"+link.host+link.pathname+link.search+link.hash);
 
+// Set pathToFPBioimage to default location, if unset
+if (fpb.pathToImages == undefined){
+  fpb.pathToImages = "https://fpb.ceb.cam.ac.uk/4"
+}
+
 // Get paths in a consistent format: if last character in string is / then remove it!
 if (fpb.pathToImages.slice(-1) === "/"){
   fpb.pathToImages = fpb.pathToImages.slice(0,-1);
