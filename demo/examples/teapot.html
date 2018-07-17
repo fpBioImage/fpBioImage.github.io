@@ -8,7 +8,6 @@
   <!-- EDIT THIS JAVASCRIPT! -->
   <script type='text/javascript'>
     fpb = {
-      pathToFPBioimage: "https://fpb.ceb.cam.ac.uk/4",
       pathToImages: "teapot-images/", // This is the path relative to the FPBioimage parent folder
       uniqueName: "teapot", // Give this image stack a unique name for bookmarking to work correctly
       numberOfImages: 111,  // Number of images in the stack
@@ -25,16 +24,7 @@
 </head>
 <body>
 
-  <div id="jsHolder"></div>
-
-  <script type="text/javascript">
-  var s1 = document.createElement("script");
-      s1.type = "text/javascript";
-      s1.src = fpb.pathToFPBioimage + "/FPProgress.js";
-      s1.innerHTML = null;
-      document.getElementById("jsHolder").innerHTML = "";
-      document.getElementById("jsHolder").appendChild(s1);
-  </script>
+  <script src="https://fpb.ceb.cam.ac.uk/4/FPProgress.js" type="text/javascript"></script>
 
 <!-- Header -->
 <nav w3-include-html="navMenu.html">
