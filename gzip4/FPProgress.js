@@ -32,7 +32,7 @@ function UnityProgress(gameInstance, progress) {
 }
 
 if (fpb.pathToFPBioimage == undefined){
-  fpb.pathToFPBioimage = "https://fpb.ceb.cam.ac.uk/4";
+  fpb.pathToFPBioimage = "https://fpb.ceb.cam.ac.uk/gzip4";
 }
 
 if (document.getElementById("jsHolder") == null){
