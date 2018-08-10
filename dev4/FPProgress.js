@@ -31,6 +31,12 @@ function UnityProgress(gameInstance, progress) {
   gameInstance.progress.full.style.width = (98 * progress) + "%";
 }
 
+if (document.getElementById("jsHolder") == null){
+  jsHolder = document.createElement("div");
+  jsHolder.id = "jsHolder";
+  document.body.appendChild(jsHolder);
+}
+
 var s2 = document.createElement("script");
     s2.type = "text/javascript";
     s2.src = fpb.pathToFPBioimage + "/UnityLoader.js";
