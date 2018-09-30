@@ -13,15 +13,21 @@ title: Sharing guide
 
 _If you use FPBioimage to share your data, please cite our original publication in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). This is required by the [license](#license)!_
 
-<h3 id="basic">Basic Usage</h3>
+<h3 id="Installation">ImageJ/FIJI Installation</h3>
+1. Install the FPBioimage plugin with 'Help -> Update -> Manage update sites -> FPBioimage' ([see here for update site details](https://imagej.net/Fpbioimage))
+2. Download and extract FPBioimage Viewer ([Windows](downloads/FPBioimage_Viewer_Win.zip) [Mac](downloads/FPBioimage_Viewer_Mac.zip))
+3. Run the FPBioimage helper plugin, and set the path by selecting the unzipped app.
+
+
+<h3 id="basic">Quick start</h3>
 
 **ImageJ or FIJI**
-1. Install the FPBioimage plugin ([see here for update site details](https://imagej.net/Fpbioimage))
+1. Install the FPBioimage as above
 2. Open your 3D data, and adjust the color map or histogram as appropriate
-3. Ensure your image is in RGB format (Image -> Type -> RGB Color)
-4. Choose Plugins -> FPBioimage Helper to start the helper
-5. Fill in the fields and click OK
-6. Share your AWS webpage link, or upload the saved webpage and image folder to a personal web server
+3. Choose Plugins -> FPBioimage Helper to start the helper
+4. Check the fields and click OK
+5. To share your data immediately, click "Upload to FPB-Host".
+    * To upload to your own server, click "Open local folder" and copy the entire contents to your web server.
 
 **Icy**
 1. Open your 3D data, and adjust the color maps and histograms as appropriate
@@ -30,9 +36,9 @@ _If you use FPBioimage to share your data, please cite our original publication 
 3. Fill in the fields and click the 'play' button (►)
 4. Share your AWS webpage link, or upload the saved webpage and image folder to a personal web server
 
-<h3 id="advanced"> Advanced Users </h3>
+<h3 id="advanced">Advanced sharing</h3>
 
-If you want to create your own FPBioimage webpage manually, the images must be saved as a PNG stack, and the webpage needs to contain some JSON and Javascript to tell the webpage how to load FPBioimage.
+If you want to create your own FPBioimage webpage manually, the images must be saved as a PNG stack, and the webpage needs to contain some JSON and Javascript to tell the webpage how to load FPBioimage. Note that the FPBioimage Helper plugins do this automatically for you, so if you want to share your data immediately just follow the instruction above.
 
 
 <h3 id="preparing">Preparing images for the viewer</h3>
@@ -80,25 +86,16 @@ The FPBioimage viewer should be included in the body of the webpage using the fo
 
 The height and width can be changed as required.
 
-The last thing to be defined in the body of the webpage should be the code required to load FPBioimage into the viewer. This HTML snippet should come after all page elements, since it can take a few seconds to load and will halt loading of the rest of the webpage for this time. The required HTML is as follows:
+The last thing to be defined in the body of the webpage should be the code required to load FPBioimage into the viewer. This HTML snippet should come after all page elements, since it can take a few seconds to load and will halt loading of the rest of the webpage for this time. The required line of HTML is:
 
 ```
-<div id="jsHolder"></div>
-
-<script type="text/javascript">
-var s1 = document.createElement("script");
-    s1.type = "text/javascript";
-    s1.src = fpb.pathToFPBioimage + "/FPProgress.js";
-    s1.innerHTML = null;
-    document.getElementById("jsHolder").innerHTML = "";
-    document.getElementById("jsHolder").appendChild(s1);
-</script>
+<script src="https://fpb.ceb.cam.ac.uk/4/FPProgress.js"></script>
 ```
 
-Note that if you want to preview the webpage offline on your local computer (i.e. not on a web server) you must set up a [localhost](https://html5hive.org/how-to-setup-a-localhost/) server for FPBioimage to work correctly.
+Note that if you want to preview the webpage offline on your local computer (i.e. not on a web server) you must set up a [localhost](https://html5hive.org/how-to-setup-a-localhost/) server for FPBioimage to load images correctly.
 
 <h3 id="assistance">Further assistance</h3>  
-We are happy to provide further assistance to help you share your 3D data online. Email the developer at [fpBioimage@gmail.com](mailto:fpbioimage@gmail.com).
+We are very happy to provide further assistance to help you share your 3D data online. Email the developer at [fpBioimage@gmail.com](mailto:fpbioimage@gmail.com).
 
 <h3 id="license">License</h3>
 
