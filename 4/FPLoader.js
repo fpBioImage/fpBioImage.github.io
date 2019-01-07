@@ -2,7 +2,7 @@
 // is changed or updated. (Shouldn't happen often/ever anymore.)
 
 // Change pathToImages to an absolute path
-if (!fpb.pathToImages.contains("fpbhost.appspot.com")){
+if (!fpb.pathToImages.includes("fpbhost.appspot.com")){
 // (FPBHost JSON is assumed to be in the correct format already, due to confusing filestore lookups)
   var link = document.createElement("a");
   link.href = fpb.pathToImages;
