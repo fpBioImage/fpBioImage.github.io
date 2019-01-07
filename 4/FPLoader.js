@@ -1,4 +1,5 @@
-// COPY all of this file into the bottom of UnityLoader every re-compile
+// COPY all of this file into the bottom of UnityLoader every time UnityLoader.js
+// is changed or updated. (Shouldn't happen often/ever anymore.)
 
 // Change pathToImages to an absolute path
 if (!fpb.pathToImages.contains("fpbhost.appspot.com")){
@@ -24,6 +25,10 @@ function nextPow2( aSize ){
 }
 
 if (fpb.fileType != "obj"){
+  // Default to png if nothing is defined
+  if (typeof fpb.fileType == 'undefined'){fpb.fileType == '.png';}
+
+  // Link to the first image:
   firstImage = fpb.pathToImages + "/" + fpb.imagePrefix + fpb.numberingFormat + "." + fpb.fileType;
 } else {
   firstImage = fpb.pathToFPBioimage + "/logo.png";
