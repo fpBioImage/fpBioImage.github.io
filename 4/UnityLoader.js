@@ -13,10 +13,12 @@ if (!fpb.pathToImages.includes("fpbhost.appspot.com")){
   link.href = fpb.pathToImages;
   fpb.pathToImages = (link.protocol+"//"+link.host+link.pathname+link.search+link.hash);
 
-  // Get paths in a consistent format: if last character in string is / then remove it!
-  if (fpb.pathToImages.slice(-1) === "/"){
-    fpb.pathToImages = fpb.pathToImages.slice(0,-1);
+  // Get paths in a consistent format: if last character in string is not / then add it!
+  if (fpb.pathToImages.slice(-1) != "/"){
+    fpb.pathToImages = fpb.pathToImages + "/";
   }
+
+  // But the opposite for pathToFPBioimage... for historical reasons...
   if (fpb.pathToFPBioimage.slice(-1) === "/"){
     fpb.pathToFPBioimage = fpb.pathToFPBioimage.slice(0,-1);
   }
@@ -34,7 +36,7 @@ if (fpb.fileType != "obj"){
   if (fpb.fileType == undefined){fpb.fileType = '.png';}
 
   // Link to the first image:
-  firstImage = fpb.pathToImages + "/" + fpb.imagePrefix + fpb.numberingFormat + "." + fpb.fileType;
+  firstImage = fpb.pathToImages + fpb.imagePrefix + fpb.numberingFormat + "." + fpb.fileType;
 } else {
   firstImage = fpb.pathToFPBioimage + "/logo.png";
 }
