@@ -1,16 +1,19 @@
 // COPY all of this file into the bottom of UnityLoader every re-compile
 
 // Change pathToImages to an absolute path
-var link = document.createElement("a");
-link.href = fpb.pathToImages;
-fpb.pathToImages = (link.protocol+"//"+link.host+link.pathname+link.search+link.hash);
+if (!fpb.pathToImages.contains("fpbhost.appspot.com")){
+// (FPBHost JSON is assumed to be in the correct format already, due to confusing filestore lookups)
+  var link = document.createElement("a");
+  link.href = fpb.pathToImages;
+  fpb.pathToImages = (link.protocol+"//"+link.host+link.pathname+link.search+link.hash);
 
-// Get paths in a consistent format: if last character in string is / then remove it!
-if (fpb.pathToImages.slice(-1) === "/"){
-  fpb.pathToImages = fpb.pathToImages.slice(0,-1);
-}
-if (fpb.pathToFPBioimage.slice(-1) === "/"){
-  fpb.pathToFPBioimage = fpb.pathToFPBioimage.slice(0,-1);
+  // Get paths in a consistent format: if last character in string is / then remove it!
+  if (fpb.pathToImages.slice(-1) === "/"){
+    fpb.pathToImages = fpb.pathToImages.slice(0,-1);
+  }
+  if (fpb.pathToFPBioimage.slice(-1) === "/"){
+    fpb.pathToFPBioimage = fpb.pathToFPBioimage.slice(0,-1);
+  }
 }
 
 // Calculate how much memory we need to request
@@ -21,7 +24,7 @@ function nextPow2( aSize ){
 }
 
 if (fpb.fileType != "obj"){
-  firstImage = fpb.pathToImages + "/" + fpb.imagePrefix + fpb.numberingFormat + ".png";
+  firstImage = fpb.pathToImages + "/" + fpb.imagePrefix + fpb.numberingFormat + "." + fpb.fileType;
 } else {
   firstImage = fpb.pathToFPBioimage + "/logo.png";
 }
