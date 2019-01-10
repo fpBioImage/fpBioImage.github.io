@@ -26,7 +26,7 @@ function nextPow2( aSize ){
 
 if (fpb.fileType != "obj"){
   // Default to png if nothing is defined
-  if (fpb.fileType == undefined){fpb.fileType = '.png';}
+  if (fpb.fileType == undefined){fpb.fileType = 'png';}
 
   // Link to the first image:
   firstImage = fpb.pathToImages + "/" + fpb.imagePrefix + fpb.numberingFormat + "." + fpb.fileType;
