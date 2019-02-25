@@ -7,14 +7,14 @@
 
   <!-- EDIT THIS JAVASCRIPT! -->
   <script type='text/javascript'>
-    pathToImages = "1h"; // This is the path relative to the FPBioimage parent folder
-    uniqueName = "MOF1h"; // Give this image stack a unique name for bookmarking to work correctly
-    numberOfImages = 20;  // Number of images in the stack
-    imagePrefix = "1h_z";  // The prefix of the image stack file names
-    numberingFormat = "0000";  // eg. "000" for 000, 001, 002, 003 etc.
-    voxelSize = [13.56,13.56,50]; // This needs to be a ratio of x:y:z voxel size.
-
-    pathToFPBioimage = "../../demo/FPBioimage"; // The path to the FPBioimage folder from this webpage
+    fpb={
+      pathToImages = "1h", // This is the path relative to the FPBioimage parent folder
+      uniqueName = "MOF1h", // Give this image stack a unique name for bookmarking to work correctly
+      numberOfImages = 20,  // Number of images in the stack
+      imagePrefix = "1h_z",  // The prefix of the image stack file names
+      numberingFormat = "0000",  // eg. "000" for 000, 001, 002, 003 etc.
+      voxelSize = {x: 13.56, y: 13.56, z: 50} // This needs to be a ratio of x:y:z voxel size.
+    }
   </script>
   <!-- END OF REQUIRED EDITS -->
 
@@ -57,17 +57,6 @@
   </ul>
 </nav>
 
-<!-- Progress bar -->
-<div id="jsHolder"> </div>
-<script type="text/javascript">
-var s1 = document.createElement("script");
-    s1.type = "text/javascript";
-    s1.src = pathToFPBioimage + "/FPProgress.js";
-    s1.innerHTML = null;
-    document.getElementById("jsHolder").innerHTML = "";
-    document.getElementById("jsHolder").appendChild(s1);
-</script>
-
 <!-- Rest of the website -->
 <div class="w3-content w3-container w3-center" style="max-width:992px;margin-bottom:80px">
   <!-- Title -->
@@ -77,6 +66,7 @@ var s1 = document.createElement("script");
 
   <!-- Put the WebGL Canvas in here-->
   <div id="fpbDiv" style="max-width:960px; height:80vh"> </div>
+  <script src="https://fpb.ceb.cam.ac.uk/4/FPProgress.js" type="text/javascript"></script>
 
   <!-- Full screen button -->
   <div class="w3-container w3-center" style="padding:0px">
