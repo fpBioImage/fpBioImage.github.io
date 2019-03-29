@@ -14,16 +14,23 @@ title: Downloads
 
 **_Don't forget to [cite](https://doi.org/10.1038/nphoton.2016.273)!_**
 
-_If you use FPBioimage to share your data, please cite our original publication in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). This is required by the [license](#license)!_
+_If you use FPBioimage to share your data, please cite our original publication in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273)._
 
-* [ImageJ and FIJI plugin](https://github.com/fpBioImage/FPBioimageHelper-FIJI/releases)
-* [Icy plugin](https://icy.bioimageanalysis.org/plugins/fpbioimagehelper)
+| [![Windows](../public/windows.png)](../downloads/FPBioimage.exe) | [![MacOS](../public/apple.png)](../downloads/FPBioimage.dmg) | [![Linux](../public/windows.png)](../downloads/FPBioimage.tar.gz) |
+| :----: | :----: | :----: |
+ | [Windows](../downloads/setup.exe) | [Mac](../downloads/FPBioimage.dmg) | [Linux](../downloads/FPBioimage.tar.gz) |
 
-* <a href="../builds/template-webpage.html" download>Webpage Template</a>
-* [Source](https://github.com/fpBioImage/unity)
+_Source code_
+* [Unity Source on Github](https://github.com/fpBioImage/unity)
 
+_Mobile releases_
 * [Android App](../4/VRBioimage.apk)
 * iOS app coming soon to the app store!
+
+_Plugins_
+* [ImageJ and FIJI plugin](https://github.com/fpBioImage/FPBioimageHelper-FIJI/releases)
+* [Icy plugin](https://icy.bioimageanalysis.org/plugins/fpbioimagehelper)
+* _Note, downloading the plugins directly is not recommended. To stay up-to-date, install the plugins from the FIJI Updater or Icy plugin manager_
 
 <h3 id="license">License</h3>
 
