@@ -16,7 +16,7 @@ title: Downloads
 
 _If you use FPBioimage to share your data, please cite our original publication in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273)._
 
-| [![Windows](../public/windows.png)](../downloads/FPBioimage.exe) | [![MacOS](../public/apple.png)](../downloads/FPBioimage.dmg) | [![Linux](../public/windows.png)](../downloads/FPBioimage.tar.gz) |
+| [![Windows](../public/windows.png)](../downloads/FPBioimage.exe) | [![MacOS](../public/apple.png)](../downloads/FPBioimage.dmg) | [![Linux](../public/linux.png)](../downloads/FPBioimage.tar.gz) |
 | :----: | :----: | :----: |
  | [Windows](../downloads/setup.exe) | [Mac](../downloads/FPBioimage.dmg) | [Linux](../downloads/FPBioimage.tar.gz) |
 
