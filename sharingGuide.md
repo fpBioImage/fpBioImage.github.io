@@ -15,8 +15,11 @@ _If you use FPBioimage to share your data, please cite our original publication 
 
 <h3 id="Installation">ImageJ/FIJI Installation</h3>
 1. Install the FPBioimage plugin with 'Help -> Update -> Manage update sites -> FPBioimage' ([see here for update site details](https://imagej.net/Fpbioimage))
-2. Download and extract FPBioimage Viewer ([Windows](downloads/FPBioimage_Viewer_Win.zip) [Mac](downloads/FPBioimage_Viewer_Mac.zip))
-3. Run the FPBioimage helper plugin, and set the path by selecting the unzipped app.
+2. Download and install the [FPBioimage Viewer]((downloads)
+  * Windows: run *setup.exe*
+  * Mac: open the _dmg_ file, and copy _FPBioimage_ into your _Applications_ folder
+  * Linux: extract the tarball with `tar -zxvf FPBioimage-x.x.x.tar.gz`, then in the extracted folder run `make install`
+3. Run the FPBioimage helper plugin
 
 
 <h3 id="basic">Quick start</h3>
@@ -24,21 +27,15 @@ _If you use FPBioimage to share your data, please cite our original publication 
 **ImageJ or FIJI**
 1. Install the FPBioimage as above
 2. Open your 3D data, and adjust the color map or histogram as appropriate
-3. Choose Plugins -> FPBioimage Helper to start the helper
+3. Choose Plugins -> FPBioimage Helper to start the viewer
 4. Check the fields and click OK
-5. To share your data immediately, click "Upload to FPB-Host".
-    * To upload to your own server, click "Open local folder" and copy the entire contents to your web server.
-
-**Icy**
-1. Open your 3D data, and adjust the color maps and histograms as appropriate
-2. Run the fpbioimagehelper plugin using the search bar within Icy
-    * Note the plugin will download and install automatically if necessary
-3. Fill in the fields and click the 'play' button (►)
-4. Share your AWS webpage link, or upload the saved webpage and image folder to a personal web server
+5. When you're happy with the rendering (e.g. opacity, cutting plane) click 'Upload to FPB-Host'
+  * Alternatively, click 'Save locally only' to generate a webpage for your own private web server
+6. Log in with a Google account, and your data will be uploaded for anyone to view!
 
 <h3 id="advanced">Advanced sharing</h3>
 
-If you want to create your own FPBioimage webpage manually, the images must be saved as a PNG stack, and the webpage needs to contain some JSON and Javascript to tell the webpage how to load FPBioimage. Note that the FPBioimage Helper plugins do this automatically for you, so if you want to share your data immediately just follow the instruction above.
+If you want to create your own FPBioimage webpage manually, you can save images as a PNG stack, and the webpage needs to contain some JSON and Javascript to tell the webpage how to load FPBioimage. Note that the FPBioimage Helper plugins do this automatically for you, so if you want to share your data immediately just follow the instruction above.
 
 
 <h3 id="preparing">Preparing images for the viewer</h3>
@@ -99,9 +96,9 @@ We are very happy to provide further assistance to help you share your 3D data o
 
 <h3 id="license">License</h3>
 
-*Use of FPBioimage requires a citation of the original publication of the software in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273). If FPBioimage is used to share data published in an academic journal, the original publication must be acknowledged in the references section of the publication.*
-
 *First Person Bioimage (FPBioimage) is distributed under the [Creative Commons Attribution - ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/). This means that, providing you credit the original software appropriately, you are free to copy, redistribute, remix, transform and build upon the software, as long as future contributions are distributed under the same license.*
+
+*If you use FPBioimage to publish work in an academic journal, please citation the original publication of the software in [Nature Photonics](https://doi.org/10.1038/nphoton.2016.273).*
 
 <a href="(https://creativecommons.org/licenses/by-sa/4.0/)">
 <img src="/public/cc.png" style="display:inline; height:2em" alt="This software is covered by a Creative Commons Share Alike License, version 4.0"><img src="/public/cc-by.png" style="display:inline; height:2em" alt="You must give appropriate credit, provide a link to the license, and indicate if changes were made."><img src="/public/cc-sa.png" style="display:inline; height:2em" alt="You must distribute your contributions under the same license as the original.">
